@@ -14,7 +14,6 @@ jobs:
     - uses: devopsmakers/pr-name-generator-action@v0.0.1
       id: generator
     - run: echo "Deploying ${{ steps.generator.outputs.name }}"
-    - run: echo "${{ github.event }}"
     - name: Comment with link
       #if: ${{ github.event.action == 'opened' || github.event.action == 'reopened' }}
       uses: peter-evans/create-or-update-comment@v2
@@ -24,4 +23,4 @@ jobs:
           Congratualations! You can access your PR environment at:
             
           https://${{ steps.generator.outputs.name }}.example.com/
-        reactions: tada
+        reactions: hooray
