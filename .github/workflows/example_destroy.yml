@@ -1,0 +1,24 @@
+name: Example Destroy
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+      - master
+    
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if:
+    steps:
+    - uses: actions/checkout@v3
+    - uses: devopsmakers/pr-name-generator-action@v0.0.1
+      id: generator
+    - run: echo "Destroying ${{ steps.generator.outputs.name }}"
+    - name: Create comment
+      uses: peter-evans/create-or-update-comment@v2
+      with:
+        issue-number: ${{ github.event.issue.number }}
+        body: |
+          Ephemeral environment: `${{ steps.generator.outputs.name }}` has been destroyed.

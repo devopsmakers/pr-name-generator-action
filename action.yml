@@ -2,7 +2,7 @@ name: 'PR Name Generator'
 description: 'Generate a consistent, unique name based on PR'
 outputs:
   name:
-    description: 'The generated name'
+    description: 'The generated unique and consistent name'
 runs:
   using: 'node16'
   main: 'dist/index.js'
