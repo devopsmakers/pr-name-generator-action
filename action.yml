@@ -4,5 +4,5 @@ outputs:
   name:
     description: 'The generated name'
 runs:
-  using: 'node17'
+  using: 'node16'
   main: 'dist/index.js'
