@@ -1,0 +1,31 @@
+name: "Tests"
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - 'releases/*'
+env:
+  CI: "true"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: yarn install
+    - run: yarn lint
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: yarn install
+    - run: yarn test
+  usage:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ./
+      id: generator
+    - run: echo "${{ steps.generator.outputs.name }}"
+  
