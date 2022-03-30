@@ -13,6 +13,8 @@ jobs:
     if:
     steps:
     - uses: actions/checkout@v3
+      with:
+        ref: main
     - uses: devopsmakers/pr-name-generator-action@v0.0.1
       id: generator
     - run: echo "Destroying ${{ steps.generator.outputs.name }}"
