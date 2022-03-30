@@ -8499,7 +8499,6 @@ try {
   const output = uniqueNamesGenerator(config);
 
   core.setOutput('generated_name', output);
-  core.exportVariable('generated_name', output);
 } catch (error) {
   core.setFailed(error.message);
 }
