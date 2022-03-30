@@ -18,7 +18,8 @@ try {
   };
 
   const output = uniqueNamesGenerator(config);
-
+  
+  core.info(`Unique name: ${output}`);
   core.setOutput('name', output);
 } catch (error) {
   core.setFailed(error.message);
