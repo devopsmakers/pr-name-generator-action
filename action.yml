@@ -1,5 +1,8 @@
 name: 'PR Name Generator'
 description: 'Generate a consistent, unique name based on PR'
+branding:
+  icon: 'anchor'
+  color: 'blue'
 outputs:
   name:
     description: 'The generated unique and consistent name'
