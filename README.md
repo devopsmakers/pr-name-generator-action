@@ -18,3 +18,5 @@ The generated unique and consistent name
 See:
 - [example_deploy.yml](https://github.com/devopsmakers/pr-name-generator-action/blob/main/.github/workflows/example_deploy.yml)
 - [example_destroy.yml](https://github.com/devopsmakers/pr-name-generator-action/blob/main/.github/workflows/example_destroy.yml)
+
+This change should trigger the example actions.
