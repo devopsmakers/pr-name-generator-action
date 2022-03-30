@@ -18,9 +18,9 @@ jobs:
       if: ${{ github.event.action == 'opened' || github.event.action == 'reopened' }}
       uses: peter-evans/create-or-update-comment@v2
       with:
-        issue-number: ${{ github.event.issue.number }}
+        issue-number: ${{ github.event.number }}
         body: |
           Congratualations! You can access your PR environment at:
             
           https://${{ steps.generator.outputs.name }}.example.com/
-        reactions: 'tada'
+        reactions: hooray
