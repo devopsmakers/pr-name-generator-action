@@ -20,7 +20,7 @@ jobs:
       with:
         issue-number: ${{ github.event.number }}
         body: |
-          Congratualations! You can access your PR environment at:
+          Congractualations! You can access your PR environment at:
             
           https://${{ steps.generator.outputs.name }}.example.com/
         reactions: hooray
