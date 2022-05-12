@@ -18,7 +18,7 @@
     "unique-names-generator": "^4.7.1"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.33.3",
+    "@vercel/ncc": "^0.33.4",
     "eslint": "^8.15.0",
     "eslint-config-google": "^0.14.0",
     "jest": "^27.5.1"
