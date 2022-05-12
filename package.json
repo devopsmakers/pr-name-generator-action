@@ -13,7 +13,7 @@
   "author": "<tim.birkett+pr-name-generator-action@devopsmakers.co.uk>",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.6.0",
+    "@actions/core": "^1.8.0",
     "@actions/github": "^5.0.1",
     "unique-names-generator": "^4.7.1"
   },
