@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.8.0",
-    "@actions/github": "^5.0.1",
+    "@actions/github": "^5.0.3",
     "unique-names-generator": "^4.7.1"
   },
   "devDependencies": {
