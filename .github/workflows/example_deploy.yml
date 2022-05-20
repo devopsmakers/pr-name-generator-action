@@ -11,7 +11,7 @@ jobs:
     if:
     steps:
     - uses: actions/checkout@v3
-    - uses: devopsmakers/pr-name-generator-action@v0.0.3
+    - uses: devopsmakers/pr-name-generator-action@v0.0.4
       id: generator
     - run: echo "Deploying ${{ steps.generator.outputs.name }}"
     - name: Comment with link
